@@ -12,7 +12,11 @@ const HomePage = () => {
     <>
       <Helmet>
         <title>Under The Covers</title>
-        <meta name="description" content="" />
+        <meta
+          name="description"
+          content="Under the Covers is a Fort Lauderdale-based band, playing all walks
+            of music from all genres!"
+        />
         <meta name="keywords" content="" />
 
         <meta name="robots" content="index, follow" />
