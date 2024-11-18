@@ -20,7 +20,7 @@ const Gallery = () => {
           <div className="masonry">
             {imgs.map((img, index) => (
               <div key={index} className="masonry-item">
-                <img src={img.path} alt={category} />
+                <img src={img.path} alt={category} width="100%" height="auto" />
               </div>
             ))}
           </div>

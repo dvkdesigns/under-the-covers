@@ -5,6 +5,7 @@ import Video from "../components/video";
 import Gallery from "../components/Gallery";
 import About from "../components/about";
 import SongList from "../components/SongList";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
@@ -24,6 +25,7 @@ const HomePage = () => {
         <Gallery />
         <About />
         <SongList />
+        <Footer />
       </div>
     </>
   );
