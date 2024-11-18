@@ -1,0 +1,38 @@
+.about-us {
+    display: block;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+    margin:0px auto;
+    width: 100%;
+  
+    &__content {
+      flex: 1;
+      padding-right: 40px;
+      margin: 0 auto;
+      max-width: 1174px;
+    }
+  
+    &__title {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  
+    &__description {
+      font-size: 1.125rem;
+      margin-bottom: 20px;
+      color: #555;
+    }
+  
+    &__image {
+      flex: 1;
+      img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  

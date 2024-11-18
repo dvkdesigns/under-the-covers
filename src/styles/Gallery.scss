@@ -1,0 +1,42 @@
+.gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  
+    h3 {
+      margin: 20px 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+  
+    .gallery-section {
+      margin-bottom: 40px;
+    }
+  
+    .masonry {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .masonry-item {
+      flex: 1 1 calc(33.333% - 10px);
+      margin-bottom: 10px;
+  
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+  
+      @media (max-width: 768px) {
+        flex: 1 1 calc(50% - 10px);
+      }
+  
+      @media (max-width: 480px) {
+        flex: 1 1 100%;
+      }
+    }
+  }
+  

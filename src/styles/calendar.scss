@@ -1,0 +1,29 @@
+#calendar {
+    background-color: #ffffff;
+    overflow:hidden;
+    
+
+    .container {
+        align-items: center;
+        display:flex;
+        max-width: 1600px;
+        margin:0px auto;
+
+
+        .sidebar {
+            flex: 0;
+            display: block;
+            align-self: flex-end;
+        }
+        #calendarList {
+            flex: 1;
+            display: block;
+            padding: 60px;
+        }
+    }
+
+}
+
+@media (max-width: 992px) { 
+    
+}

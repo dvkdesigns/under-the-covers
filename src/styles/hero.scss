@@ -1,0 +1,56 @@
+#hero {
+    background-color: #0c0c0c;
+    box-shadow: 0 4px 2px -2px gray;
+    overflow:hidden;
+    
+
+    .container {
+        align-items: center;
+        display:flex;
+        max-width: 1600px;
+        margin:0px auto;
+
+
+        .left {
+            flex: 1;
+            display: block;
+        }
+        .right {
+            flex: 1;
+            display: block;
+        }
+    }
+
+    #LogoSection, #BannerSection {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+    #LogoSection {padding: 0px 20px;
+        hr {max-width: 600px;}
+        li {
+            display: inline;
+            padding: 8px;
+            a {
+                text-decoration: none;
+                color:white;
+                font-weight: bold;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+        }
+        .logo {max-width: 400px; width: 100%;}
+    }
+    #BannerSection img {width: 100%; }
+}
+
+@media (max-width: 992px) { 
+    #hero {
+        .container {
+            display: block;
+            padding: 35px 10%;
+            #LogoSection, #BannerSection { padding: 20px; }
+        }
+        #LogoSection li {display: block;}
+    }
+}
