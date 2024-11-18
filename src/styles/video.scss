@@ -1,29 +1,67 @@
 #video {
     background-color: #0c0c0c;
-    overflow:hidden;
-    
 
+  
     .container {
-        align-items: center;
-        display:flex;
-        max-width: 1600px;
-        margin:0px auto;
-
-
-        .sidebar {
-            flex: 0;
-            display: block;
-            align-self: flex-end;
-        }
-        #calendarList {
-            flex: 1;
-            display: block;
-            padding: 60px;
-        }
+      align-items: center;
+      display: flex;
+      max-width: 1600px;
+      margin: 0 auto;
+  
+      .sidebar {
+        flex: 0;
+        display: block;
+        align-self: flex-end;
+      }
+  
+      #calendarList {
+        flex: 1;
+        display: block;
+        padding: 60px;
+      }
     }
-
-}
-
-@media (max-width: 992px) { 
-    
-}
+  
+    // Responsive styles
+    @media (max-width: 992px) {
+      .container {
+        flex-direction: column; // Stack sidebar and content vertically
+        align-items: stretch;
+  
+        .sidebar {
+          flex: 1;
+          align-self: stretch; // Full width for the sidebar
+          margin-bottom: 20px; // Add spacing between stacked elements
+        }
+  
+        #calendarList {
+          flex: 1;
+          padding: 30px; // Reduce padding for smaller screens
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .container {
+        .sidebar {
+          display: none; // Hide sidebar on smaller screens
+        }
+  
+        #calendarList {
+          padding: 20px; // Further reduce padding
+          font-size: 0.9rem; // Adjust font size for readability
+        }
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .container {
+        padding: 10px; // Add padding around the container
+      }
+  
+      #calendarList {
+        padding: 15px;
+        font-size: 0.8rem; // Optimize font size for small screens
+      }
+    }
+  }
+  

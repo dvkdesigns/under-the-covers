@@ -46,5 +46,55 @@
         }
       }
     }
+  
+    // Responsive Styles
+    @media (max-width: 768px) {
+      .song-table {
+        thead {
+          display: none; // Hide table headers for small screens
+        }
+  
+        tbody {
+          tr {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+  
+            td {
+              display: flex;
+              justify-content: space-between;
+              padding: 10px;
+  
+              &::before {
+                content: attr(data-label);
+                font-weight: bold;
+                color: #333;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 480px) {
+      padding: 10px;
+  
+      h2 {
+        font-size: 1.2rem;
+      }
+  
+      .song-table {
+        tbody {
+          tr {
+            td {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
   }
   

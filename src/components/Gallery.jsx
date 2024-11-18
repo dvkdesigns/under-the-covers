@@ -2,10 +2,7 @@ import React from "react";
 import "../styles/Gallery.scss";
 
 const images = [
-  { path: "gallery/nature/img1.jpg", category: "Nature" },
-  { path: "gallery/nature/img2.jpg", category: "Nature" },
-  { path: "gallery/urban/img3.jpg", category: "Urban" },
-  { path: "gallery/urban/img4.jpg", category: "Urban" },
+  { path: "gallery/fullband/img1.jpg", category: "Our Pictures" },
 ];
 
 const Gallery = () => {

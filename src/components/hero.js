@@ -9,20 +9,6 @@ const Hero = () => {
         <aside id="LogoSection" class="left">
           <img src={Logo} alt="My Image" class="logo" />
           <hr />
-          <ul>
-            <li>
-              <a href="default.asp">Home</a>
-            </li>
-            <li>
-              <a href="news.asp">News</a>
-            </li>
-            <li>
-              <a href="contact.asp">Contact</a>
-            </li>
-            <li>
-              <a href="about.asp">About</a>
-            </li>
-          </ul>
           <p>
             Under the Covers is a Fort Lauderdale-based band, playing all walks
             of music from all genres! UTC brings energy, fun, & tongue in cheek
