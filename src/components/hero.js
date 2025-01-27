@@ -10,9 +10,9 @@ const Hero = () => {
           <img src={Logo} alt="My Image" class="logo" />
           <hr />
           <p>
-            Under the Covers is a Fort Lauderdale-based band, playing all walks
-            of music from all genres! UTC brings energy, fun, & tongue in cheek
-            action to every one of their shows!
+            Under the Covers is a Fort Lauderdale-based band, playing all genres
+            of music! UTC brings energy, fun, & tongue in cheek action to every
+            one of their shows!
           </p>
           <a href="mailto:underthecoverssfla@gmail.com">
             <button>Contact Us!</button>
