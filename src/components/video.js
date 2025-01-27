@@ -1,5 +1,5 @@
 import PromoVideo from "./MoviePlayer.jsx";
-import BandSilhouette1 from "../assets/band-silhouette.webp";
+import BandSilhouette1 from "../assets/band-silhouette-dk.webp";
 import "../styles/video.scss";
 
 const Hero = () => {

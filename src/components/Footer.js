@@ -8,28 +8,28 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-socials">
           <a
-            href="https://www.facebook.com/profile.php?id=61564662907590"
+            href="https://www.facebook.com/p/Under-the-Covers-South-Florida-61564662907590/"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link facebook"
           >
-            <i className="fab fa-facebook"></i> Facebook
+            <i className="fab fa-facebook"></i>
           </a>
           <a
-            href="https://www.youtube.com/yourchannel"
+            href="https://www.youtube.com/underthecovers-m9t"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link youtube"
           >
-            <i className="fab fa-youtube"></i> YouTube
+            <i className="fab fa-youtube"></i>
           </a>
           <a
-            href="https://www.instagram.com/youraccount"
+            href="https://www.instagram.com/underthecoverssfl"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link instagram"
           >
-            <i className="fab fa-instagram"></i> Instagram
+            <i className="fab fa-instagram"></i>
           </a>
         </div>
         <p className="footer-text">

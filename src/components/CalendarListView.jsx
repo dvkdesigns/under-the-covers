@@ -4,7 +4,7 @@ import "../styles/CalendarListView.scss";
 const CalendarListView = () => {
   // Sample event data stored in the component file
   const events = [
-    { id: 1, title: "Angry Warthog Saloon", date: "2025-1-04", time: "9:00 PM - Midnight" },
+    { id: 1, title: "Pompano Beach Brewery", date: "2025-2-28", time: "7:00 PM - 10 PM" },
   ];
 
   return (

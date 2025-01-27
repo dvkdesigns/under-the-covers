@@ -1,33 +1,23 @@
 import React from "react";
-import "../styles/Gallery.scss";
 
-const images = [
-  { path: "gallery/fullband/img1.jpg", category: "Our Pictures" },
-];
-
-const Gallery = () => {
-  const groupedImages = images.reduce((acc, img) => {
-    acc[img.category] = acc[img.category] || [];
-    acc[img.category].push(img);
-    return acc;
-  }, {});
-
+const InstagramFeed = () => {
   return (
-    <div className="gallery">
-      {Object.entries(groupedImages).map(([category, imgs]) => (
-        <section key={category} className="gallery-section">
-          <h3>{category}</h3>
-          <div className="masonry">
-            {imgs.map((img, index) => (
-              <div key={index} className="masonry-item">
-                <img src={img.path} alt={category} width="100%" height="auto" />
-              </div>
-            ))}
-          </div>
-        </section>
-      ))}
+    <div className="gallery>">
+      <h2>Follow Us on Instagram</h2>
+      <div className="instagram-embed">
+        <blockquote 
+          className="instagram-media" 
+          data-instgrm-permalink="https://www.instagram.com/underthecoverssfl/" 
+          data-instgrm-version="14" 
+          style={{ maxWidth: "100%", margin: "0 auto" }}
+        ></blockquote>
+        <script async src="//www.instagram.com/embed.js"></script>
+      </div>
+      <a href="https://www.instagram.com/underthecoverssfl/" target="_blank" rel="noopener noreferrer">
+  View our Instagram
+</a>
     </div>
   );
 };
 
-export default Gallery;
+export default InstagramFeed;
