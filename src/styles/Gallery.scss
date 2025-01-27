@@ -1,7 +1,31 @@
 .gallery {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+background-color:white;
+
+    .container {
+      align-items: center;
+      display: flex;
+      max-width: 1600px;
+      margin: 0 auto;
+  
+      .sidebar {
+        flex: 0;
+        display: block;
+        align-self: flex-end;
+        max-height: 333px;
+      }
+  
+      .instagram-feed {
+        flex: 1;
+        display: block;
+
+        box-shadow:unset ;
+        background-color:white;
+      }
+      .instagram-media {
+        min-width: 100% !important;
+      }
+    }
+  
   
     h3 {
       margin: 20px 0;
@@ -42,11 +66,54 @@
   
       @media (max-width: 768px) {
         flex: 1 1 calc(50% - 10px);
+        .sidebar {
+          display: none; // Optionally hide the sidebar for smaller screens
+        }
       }
   
       @media (max-width: 480px) {
         flex: 1 1 100%;
       }
+    }
+    @media (max-width: 992px) {
+      .container {
+        flex-direction: column; // Stack elements vertically
+        align-items: stretch;
+  
+        .sidebar {
+          flex: 1;
+          align-self: stretch; // Make sidebar take full width
+          margin-bottom: 20px; // Add spacing for stacked layout
+        }
+  
+        #calendarList {
+          flex: 1;
+          padding: 20px; // Reduce padding for smaller screens
+        }
+        .calendar-list-view {padding: 0 !important;}
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .container {
+        .sidebar {
+          display: none; // Optionally hide the sidebar for smaller screens
+        }
+  
+        #calendarList {
+          padding: 15px; // Further reduce padding
+          font-size: 0.9rem; // Adjust font size for better readability
+        }
+        .calendar-list-view {padding: 0 !important;}
+      }
+    }
+  
+    @media (max-width: 480px) {
+      #calendarList {
+        padding: 10px;
+        font-size: 0.8rem; // Make text smaller for very small screens
+      }
+      .calendar-list-view {padding: 0 !important;}
     }
   }
   

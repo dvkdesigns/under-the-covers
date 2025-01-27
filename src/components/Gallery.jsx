@@ -1,9 +1,18 @@
 import React from "react";
+import BandSilhouette1 from "../assets/band-silhouette.webp";
+import "../styles/Gallery.scss";
+
 
 const InstagramFeed = () => {
   return (
-    <div className="gallery>">
-      <h2>Follow Us on Instagram</h2>
+    <div className="gallery">
+      <div class="container">
+    <div class="sidebar">
+          <img src={BandSilhouette1} alt="My Image" width="500px" />
+        </div>
+
+    <div className="instagram-feed">
+      <h3>Follow Us on Instagram</h3>
       <div className="instagram-embed">
         <blockquote 
           className="instagram-media" 
@@ -13,10 +22,8 @@ const InstagramFeed = () => {
         ></blockquote>
         <script async src="//www.instagram.com/embed.js"></script>
       </div>
-      <a href="https://www.instagram.com/underthecoverssfl/" target="_blank" rel="noopener noreferrer">
-  View our Instagram
-</a>
     </div>
+    </div></div>
   );
 };
 
