@@ -3,6 +3,7 @@ import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 import "../styles/ContactPage.scss"; // Import CSS file
 import Logo from "../assets/logo.png";
 import Group from "../assets/pbb-group.svg";
+import Venmo from "../assets/UTC-qr-code.svg";
 
 const ContactPage = () => {
   return (
@@ -51,6 +52,7 @@ const ContactPage = () => {
           >
             <FaYoutube size={24} /> <span>YouTube</span>
           </a>
+          <img src={Venmo} alt="My Image" class="Venmo" />
         </div>
       </div>
     </>
